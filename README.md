@@ -1,107 +1,115 @@
 # 🏦 Banco Nunes
 
-Sistema bancário desenvolvido em Python com persistência de dados em PostgreSQL.
+A digital banking system developed in Python with PostgreSQL data persistence.
 
-## 📖 Sobre o projeto
+## 📖 About the Project
 
-O Banco Nunes é uma aplicação de terminal que simula as principais operações de um banco digital. O projeto foi desenvolvido para praticar Programação Orientada a Objetos (POO), integração com banco de dados, autenticação de usuários e consumo de APIs.
+Banco Nunes is a terminal-based banking application that simulates core digital banking operations.
 
-## ✨ Funcionalidades
+The project was created to practice **Object-Oriented Programming (OOP)**, database integration, user authentication, secure password handling, and external API integration.
 
-- ✅ Cadastro de clientes
-- ✅ Login de usuários
-- ✅ Criptografia de senhas
-- ✅ Confirmação de e-mail utilizando a API Resend
-- ✅ Consulta de saldo
-- ✅ Depósito
-- ✅ Saque
-- ✅ Extrato de transações
-- ✅ Persistência de dados com PostgreSQL
-- ✅ Tratamento de exceções personalizadas
+The application follows a modular architecture, separating business logic, database operations, services, and exceptions.
 
-## 🛠️ Tecnologias
+## ✨ Features
 
-- Python 3.14
-- PostgreSQL
-- psycopg2
-- python-dotenv
-- Resend API
-- Git
-- GitHub
+* ✅ Customer registration
+* ✅ User authentication system
+* ✅ Secure password hashing
+* ✅ Email verification using Resend API
+* ✅ Balance consultation
+* ✅ Deposits
+* ✅ Withdrawals
+* ✅ Transaction history
+* ✅ PostgreSQL database persistence
+* ✅ Custom exception handling
 
-## 📂 Estrutura do projeto
+## 🛠️ Technologies
+
+* Python
+* PostgreSQL
+* psycopg2
+* python-dotenv
+* Resend API
+* Git
+* GitHub
+
+## 🏗️ Project Architecture
 
 ```
 Banco Nunes/
 │
-├── main.py
-├── banco.py
-├── cliente.py
-├── database.py
-├── email_service.py
-├── exceptions.py
-├── transacao.py
-├── utils.py
+├── main.py              # Application entry point
+├── banco.py             # Banking business logic
+├── cliente.py           # Customer entity
+├── database.py          # Database connection and queries
+├── email_service.py     # Email verification service
+├── exceptions.py        # Custom exceptions
+├── transacao.py         # Transaction management
+├── utils.py             # Utility functions
+│
 ├── scripts/
-│   └── criar_banco.py
+│   └── criar_banco.py   # Database setup script
+│
 ├── .gitignore
 └── README.md
 ```
 
-## 🚀 Como executar
+## 🚀 Installation and Execution
 
-1. Clone o repositório:
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/SEU-USUARIO/Banco-Nunes.git
 ```
 
-2. Entre na pasta do projeto:
+### 2. Navigate to the project folder
 
 ```bash
 cd Banco-Nunes
 ```
 
-3. Instale as dependências:
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Configure o arquivo `.env`:
+### 4. Configure environment variables
+
+Create a `.env` file:
 
 ```env
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=banco_nunes
 DB_USER=postgres
-DB_PASSWORD=sua_senha
+DB_PASSWORD=your_password
 
-RESEND_API_KEY=sua_chave_da_resend
+RESEND_API_KEY=your_resend_api_key
 ```
 
-5. Crie as tabelas:
+### 5. Create the database tables
 
 ```bash
 python scripts/criar_banco.py
 ```
 
-6. Execute a aplicação:
+### 6. Run the application
 
 ```bash
 python main.py
 ```
 
-## 📌 Melhorias futuras
+## 🔮 Future Improvements
 
-- Transferências entre contas
-- Interface gráfica
-- API REST
-- Dashboard Web
-- Autenticação em dois fatores (2FA)
-- Testes automatizados
-- Docker
+* Bank transfers between accounts
+* Graphical user interface
+* REST API integration
+* Web dashboard
+* Two-factor authentication (2FA)
+* Automated testing
+* Docker containerization
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 **Rafael Nunes Silva Carneiro**
